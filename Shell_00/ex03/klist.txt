@@ -1,0 +1,6 @@
+Credentials cache: API:FF9BBA61-72BA-4B11-BE80-2F0AB32AEFA3
+        Principal: mkardes@42KOCAELI.COM.TR
+
+  Issued                Expires               Principal
+Sep 29 10:18:57 2021  Sep 29 20:18:57 2021  krbtgt/42KOCAELI.COM.TR@42KOCAELI.COM.TR
+Sep 29 10:18:59 2021  Sep 29 20:18:57 2021  HTTP/student-storage.42kocaeli.com.tr@42KOCAELI.COM.TR
