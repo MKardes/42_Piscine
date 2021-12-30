@@ -7,15 +7,10 @@ void	ft_putchar(char a)
 
 void	ft_is_negative(int n)
 {
-	char	a;
-	char	b;
-
-	a = 'N' ;
-	b = 'P' ;
 	if (n < 0)
 	{
-		ft_putchar(a);
+		ft_putchar('N');
 	}
 	else
-		ft_putchar(b);
+		ft_putchar('P');
 }

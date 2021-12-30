@@ -1,4 +1,4 @@
-void	ft_putchar(char x);
+void	ft_print_numbers(void);
 
 int	main(void)
 {
