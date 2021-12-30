@@ -1,27 +1,14 @@
 void    ft_rev_int_tab(int *tab, int size)
 {
-    int g;
-    int a;
+	int g;
+    	int a;
 
-    a = 0;
-    if (size % 2 == 1 )
-    {
-        while(a <= (size-3) / 2)
-        {
-            g = tab[a];
-            tab[a] = tab[size-a-1];
-            tab[size - a-1] = g;
-            a++;
-        }
-    }
-    else
-    {
-        while(a <= size/2 -1)
-        {
-            g = tab[a];
-            tab[a] = tab[size-a-1];
-            tab[size-a-1] = g;
-            a++;
-        }
-    }
+    	a = 0;
+	while(a <= size / 2)
+	{
+		g = tab[a];
+		tab[a] = tab[size - a - 1];
+		tab[size - a - 1] = g;
+		a++;
+	}
 }
