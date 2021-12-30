@@ -13,9 +13,3 @@ void    ft_putstr(char *str)
         str++;
     }
 }
-
-int main(void)
-{
-    char *a = "asdasdv";
-    ft_putstr(a);
-}
