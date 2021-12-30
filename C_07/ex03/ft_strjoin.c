@@ -37,7 +37,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	s = (char *)malloc(sayac(size, strs, sep) + 1);
 	i1 = 0;
 	c = 0;
-	while (bir < size)
+	while (i1 < size)
 	{
 		i2 = 0;
 		while (strs[i1][i2] != '\0')
@@ -53,6 +53,6 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 
 int main(int ac, char **av)
 {
-	char *mychar[] = {"arda", "sarp", "fatih", "asd"};
-	printf("%s$\n", ft_strjoin(4 ,mychar, "----"));
+	char *mychar[] = {"uasd", "ddsa", "asd", "emeha"};
+	printf("%s$\n", ft_strjoin(4 ,mychar, "-----"));
 }

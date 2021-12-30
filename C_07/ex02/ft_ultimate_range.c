@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int	ft_ultimate_range(int **range, int min, int max)		//	(a,2,5)  {2,3,4}
+int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	len;
 	int	i;
