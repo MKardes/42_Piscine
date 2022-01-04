@@ -4,8 +4,11 @@ int	ft_str_is_uppercase(char *str);
 
 int	main(void)
 {
-	char *asd;
+	char	*a;
+	char	*b;
 
-	asd = "";
-	printf("%d",ft_str_is_uppercase(asd));
+	b = "asdADasf";
+	a = "ASDFEAF";
+	printf("It should print '1': %d\nIt should print '0': %d\n",ft_str_is_uppercase(a),ft_str_is_uppercase(b));
+	return(0);
 }
