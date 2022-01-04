@@ -4,8 +4,11 @@ int	ft_str_is_lowercase(char *str);
 
 int	main(void)
 {
-	char *asd;
+	char	*a;
+	char	*b;
 
-	asd = "asd123";
-	printf("%d",ft_str_is_lowercase(asd));
+	b = "asdAfe";
+	a = "asd";
+	printf("It should print '1': %d\nIt should print '0': %d\n",ft_str_is_lowercase(a),ft_str_is_lowercase(b));
+	return(0);
 }
