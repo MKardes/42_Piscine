@@ -4,8 +4,11 @@ int	ft_str_is_numeric(char *str);
 
 int	main(void)
 {
-	char *asd;
+	char	*a;
+	char	*b;
 
-	asd = "";
-	printf("%d",ft_str_is_numeric(asd));
+	a = "132123";
+	b = "1421a12";
+	printf("It should print '1': %d\nIt should print '0': %d\n", ft_str_is_numeric(a), ft_str_is_numeric(b));
+	return(0);
 }
