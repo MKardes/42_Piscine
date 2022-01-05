@@ -7,6 +7,6 @@ int	main(void)
 	char asd[] = "asdasdsadweq";
 	char bcd[] = "";
 
-	printf("%d", ft_strlcpy(bcd, asd, 2));
-	printf("\n%s", bcd);
+	printf("It should print '12, as': %d, %s\n", ft_strlcpy(bcd, asd, 2), bcd);
+	return (0);
 }

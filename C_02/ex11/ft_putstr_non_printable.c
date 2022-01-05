@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -29,11 +28,4 @@ void	ft_putstr_non_printable(char *str)
 			hex(str[i]);
 		i++;
 	}
-}
-
-int main(void)
-{
-    char *str = "asdasdsad\nasd\fs\vdf";
-    ft_putstr_non_printable(str);
-    printf("\n%s",str);
 }
