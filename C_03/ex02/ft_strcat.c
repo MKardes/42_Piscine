@@ -16,5 +16,3 @@ char	*ft_strcat(char *dest, char *src)
 	dest[a] = '\0';
 	return (dest);
 }
-s1 = 123
-s2 = asd

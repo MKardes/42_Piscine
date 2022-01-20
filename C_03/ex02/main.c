@@ -4,9 +4,10 @@ char	*ft_strcat(char *dest, char *src);
 
 int	main(void)
 {
-	char a[] = "ca";
-	char b[] = "asd";
+	char	a[] = "Power";
+	char	b[] = "Rangers";
 
 	ft_strcat(a,b);
-	printf("%s",a);
+	printf("It should print 'PowerRangers': %s\n",a);
+	return (0);
 }
