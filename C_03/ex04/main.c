@@ -4,8 +4,9 @@ char	*ft_strstr(char *str, char *to_find);
 
 int	main(void)
 {
-	char a[] = "musabiler";
-	char b[] = "abi";
+	char	a[] = "Hüzüntü";
+	char	b[] = "üz";
 
-	printf("%s\n", ft_strstr(a, b));
+	printf("It should print 'üzüntü': %s\n", ft_strstr(a, b));
+	return (0);
 }
