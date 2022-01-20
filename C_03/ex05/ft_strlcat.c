@@ -1,31 +1,31 @@
 unsigned int	ft_strlen(char *str)
 {
-	unsigned int	counter;
+	unsigned int	c;
 
-	counter = 0;
+	c = 0;
 	while (*str != '\0')
 	{
-		counter++;
+		c++;
 		str++;
 	}
-	return (counter);
+	return (c);
 }
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	c;
-	unsigned int	d;
+	unsigned int	a;
+	unsigned int	i;
 
 	if (size <= ft_strlen(dest))
 		return (size + ft_strlen(src));
-	c = ft_strlen(dest);
-	d = 0;
-	while (src[d] != '\0' && c + 1 < size)
+	a = ft_strlen(dest);
+	i = 0;
+	while (src[i] != '\0' && a + 1 < size)
 	{
-		dest[c] = src[d];
-		c++;
-		d++;
+		dest[a] = src[i];
+		a++;
+		i++;
 	}
-	dest[c] = '\0';
-	return (ft_strlen(dest) + ft_strlen(&src[d]));
+	dest[a] = '\0';
+	return (ft_strlen(dest) + ft_strlen(&src[i]));
 }
