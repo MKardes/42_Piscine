@@ -7,20 +7,20 @@ void	ft_putchar(char a)
 
 int	main(int ac, char **av)
 {
-	int	a;
+	int	i;
 
-	a = 1;
 	if (ac > 1)
 	{
-		while (a < ac)
+		i = 1;
+		while(i < ac)
 		{
-			while (*av[a] != '\0')
+			while (*av[i])
 			{
-				ft_putchar(*av[a]);
-				av[a]++;
+				ft_putchar(*av[i]);
+				av[i]++;
 			}
-			write(1, "\n", 1);
-			a++;
+			i++;
+			ft_putchar('\n');
 		}
 	}
 	return (0);
