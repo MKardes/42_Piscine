@@ -1,26 +1,21 @@
 #include <unistd.h>
 
-void	ft_putchar(char a)
+int	main(int ac, char **av)
 {
-	write(1, &a, 1);
-}
-
-int	main(int av, char **b)
-{
-	int	a;
-
-	a = av;
-	if (av > 1)
+	if (ac > 1)
 	{
-		while (a > 1)
+		int	i;
+
+		i = ac - 1;
+		while (i >= 0)
 		{
-			while (*b[a - 1] != '\0')
+			while(*av[i])
 			{
-				ft_putchar(*b[a - 1]);
-				b[a - 1]++;
+				write(1, av[i], 1);
+				av[i]++;
 			}
-			ft_putchar('\n');
-			a--;
+			write(1, "\n", 1);
+			i--;
 		}
 	}
 	return (0);
