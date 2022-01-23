@@ -7,14 +7,10 @@ char	*ft_strdup(char *src)
 
 	i = 0;
 	while (src[i])
-	{
 		i++;
-	}
 	dest = (char *)malloc(i + 1);
 	if (!dest)
-	{
-		return (0);
-	}
+		return (0);	
 	i = 0;
 	while (src[i] != '\0')
 	{

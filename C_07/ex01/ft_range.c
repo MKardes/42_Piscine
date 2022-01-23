@@ -11,7 +11,7 @@ int	*ft_range(int min, int max)
 		return (me = NULL);
 	}
 	range = max - min;
-	me = (int *)malloc(range * sizeof(int));
+	me = (int *)malloc(range * sizeof(int) + 1);
 	if (!me)
 		return (0);
 	i = 0;
