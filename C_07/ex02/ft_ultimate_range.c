@@ -35,6 +35,7 @@ int	main()
 	b = &c;
 	a = &b;
 	len = ft_ultimate_range (a, 4, 10);
+	printf("%d\n", len);
 	while(i<len)
 	{
 		printf("%d", a[0][i]);
