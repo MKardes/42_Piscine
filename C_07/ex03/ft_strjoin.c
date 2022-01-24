@@ -1,19 +1,17 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 int	sayac(int size, char **str, char *s)
 {
 	int	i;
 	int	a;
 	int	b;
-	int	c;
 	
 	i = 0;
 	a = 0;
-	while(a < size)
+	while (a < size)
 	{
 		b = 0; 
-		while(str[a][b] != '\0')
+		while (str[a][b] != '\0')
 		{
 			b++;
 			i++;
@@ -21,10 +19,9 @@ int	sayac(int size, char **str, char *s)
 		a++;
 	}
 	b = 0;
-	while(s[b] != '\0')
+	while (s[b] != '\0')
 		b++;
-	c = (a - 1) * b;
-	return(i + c);
+	return (i + ((a - 1) * b)) ;
 }
 
 char	*ft_strjoin(int size, char **strs, char *sep)
@@ -34,7 +31,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int	i2;
 	int	c;
 	
-	s = (char *)malloc(sayac(size, strs, sep) + 1);
+	s = (char *)malloc(sizeof(char) * sayac(size, strs, sep) + 1);
 	i1 = 0;
 	c = 0;
 	while (i1 < size)
@@ -49,10 +46,4 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	}
 	s[c] = '\0';
 	return (s);
-}
-
-int main(int ac, char **av)
-{
-	char *mychar[] = {"uasd", "ddsa", "asd", "emeha"};
-	printf("%s$\n", ft_strjoin(4 ,mychar, "-----"));
 }
