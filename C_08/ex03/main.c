@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "ft_point.h"
 
@@ -10,12 +9,9 @@ void	set_point(t_point *point)
 
 int	main(void)
 {
-	t_point	*dene;
-	dene = (t_point*) malloc(sizeof(dene));
-	dene -> x = 10;
-	printf("***%d***", dene -> x);
-
-	set_point(dene);
-	printf("%d,%d",dene -> x, dene -> y);
+	t_point	point;
+	
+	set_point(&point);
+	printf("It should print '42 , 21': %d , %d\n", point.x, point.y);
 	return(0);
 }
